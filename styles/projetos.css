@@ -86,13 +86,55 @@ main {
 .design-box h2, .dev-box h2 {
     color: #FFF;
     text-align: center;
-    margin: 20px 0 40px 0;
+    margin: 20px 0 20px 0;
     text-transform: uppercase;
 }
 
+/* Menu horizontal com scroll para projetos de design. */
+
+.design-box #wrapper {
+    padding: 10px 50px 20px 50px;
+    margin: 10px;
+    max-height: 520px;
+    display: flex;
+    overflow-x: auto;
+}
+
+#wrapper::-webkit-scrollbar {
+    width: 20px;
+}
+
+#wrapper::-webkit-scrollbar-thumb {
+    background-color: #01A342;
+    border-radius: 50px;
+}
+#wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #49ff92;
+}
+
+
+#wrapper .box {
+    min-width: 510px;
+    height: 500px;
+    text-align: center;
+    margin-right: 5px;
+    background-color: #202020;
+    border-radius: 20px;
+}
+
+#wrapper .box img {
+    height: 300px;
+    padding: 10px;
+}
+
+.box .box-p {
+    line-height: 50px;
+    color: #01A342;
+}
+
+
+
 /* Responsividade */
-
-
 /*small laptops a partir de 1100px */
 @media (max-width: 1100px) {
 }
@@ -104,4 +146,13 @@ main {
 
 /* Celular 650px*/
 @media(max-width: 650px) {
+    .header-title {
+        font-size: 20px;
+    }
+    .nav-options li {
+        margin: 0 0 0 10px;
+    }
+    .nav-options li a {
+        font-size: 12px;
+    }
 }

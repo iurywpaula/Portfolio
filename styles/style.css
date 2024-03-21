@@ -61,7 +61,7 @@ main {
     margin: 10px auto;
     height: 700px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .maincard1 {
@@ -89,7 +89,6 @@ main {
     text-transform: uppercase;
     font-size: 18px;
     margin-top: 8px;
-    color: #01A342;
 }
 .main-card2 p {
     font-size: 20px;
@@ -115,10 +114,60 @@ main {
 
 /* Responsividade */
 
-@media (max-width: 1000px) {
-    .foto {
-        width: 200px;
-        height: 300px;
-        object-fit: contain;
+
+/*small laptops a partir de 1100px */
+@media (max-width: 1100px) {
+}
+
+/* Tablet 900px */
+@media (max-width: 900px) {
+    main {
+        width: 95%;
+    }
+    .main-card2 h2 {
+        font-size: 40px;
+    }
+    .main-card2 h5 {
+        font-size: 13px;
+    }
+    .main-card2 p {
+        font-size: 13px;
+        margin: 20px 0px 50px 0px;
+        text-align: center;
+    }
+}
+
+/* Celular 650px*/
+@media(max-width: 650px) {
+
+    .header-title {
+        font-size: 20px;
+    }
+    .nav-options li {
+        margin: 0 0 0 10px;
+    }
+    .nav-options li a {
+        font-size: 12px;
+    }
+    main {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+    }
+    .main-card2 {
+        margin: 0 auto;
+    }
+    .main-card2 h2 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .main-card2 h5 {
+        font-size: 13px;
+    }
+    .main-card2 p {
+        font-size: 13px;
+        margin: 20px 0px 50px 0px;
+        text-align: center;
     }
 }
